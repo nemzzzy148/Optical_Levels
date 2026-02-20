@@ -1,0 +1,112 @@
+{
+  "name": "Prism Labyrinth",
+  "size": 1.0,
+  "bgR": 0.04,
+  "bgG": 0.04,
+  "bgB": 0.08,
+  "bgA": 1,
+
+  "lights": [
+    { "r": 1, "g": 0.55, "b": 0, "a": 0.08, "x": -14, "y": 22 }
+  ],
+
+  "receivers": [
+    { "light": true, "x": 14, "y": -22 }
+  ],
+
+  "meshObjects": [
+
+    {
+      "mirror": false,
+      "collision": true,
+      "drawable": false,
+      "r": 0.35,"g":0.35,"b":0.35,"a":1,
+      "vertices": [-15,-25, 15,-25, 15,-23, -15,-23],
+      "triangles": [0,1,2, 2,3,0]
+    },
+    {
+      "mirror": false,
+      "collision": true,
+      "drawable": false,
+      "r": 0.35,"g":0.35,"b":0.35,"a":1,
+      "vertices": [-15,23, 15,23, 15,25, -15,25],
+      "triangles": [0,1,2, 2,3,0]
+    },
+    {
+      "mirror": false,
+      "collision": true,
+      "drawable": false,
+      "r": 0.35,"g":0.35,"b":0.35,"a":1,
+      "vertices": [-15,-25, -13,-25, -13,25, -15,25],
+      "triangles": [0,1,2, 2,3,0]
+    },
+    {
+      "mirror": false,
+      "collision": true,
+      "drawable": false,
+      "r": 0.35,"g":0.35,"b":0.35,"a":1,
+      "vertices": [13,-25, 15,-25, 15,25, 13,25],
+      "triangles": [0,1,2, 2,3,0]
+    },
+
+    {
+      "mirror": false,
+      "collision": true,
+      "drawable": false,
+      "r": 0.2,"g":0.7,"b":0.2,"a":1,
+      "vertices": [-5,5, 0,15, 5,5],
+      "triangles": [0,1,2]
+    },
+
+    {
+      "mirror": false,
+      "collision": true,
+      "drawable": false,
+      "r": 0.2,"g":0.7,"b":0.2,"a":1,
+      "vertices": [-6,-5, 6,-5, 3,-15, -3,-15],
+      "triangles": [0,1,2, 2,3,0]
+    },
+
+    {
+      "mirror": true,
+      "collision": true,
+      "drawable": false,
+      "r": 0.8,"g":0.8,"b":0.8,"a":1,
+      "vertices": [-10,10, -4,14, -2,12, -8,8],
+      "triangles": [0,1,2, 2,3,0]
+    },
+
+    {
+      "mirror": true,
+      "collision": true,
+      "drawable": false,
+      "r": 0.8,"g":0.8,"b":0.8,"a":1,
+      "vertices": [2,-2, 8,2, 6,6, 0,2],
+      "triangles": [0,1,2, 2,3,0]
+    },
+
+    {
+      "mirror": false,
+      "collision": false,
+      "drawable": true,
+      "r": 0.2,"g":0.2,"b":0.6,"a":0.4,
+      "vertices": [-12,-18, 12,-18, 12,-12, -12,-12],
+      "triangles": [0,1,2, 2,3,0]
+    },
+
+    {
+      "mirror": false,
+      "collision": false,
+      "drawable": true,
+      "r": 0.3,"g":0.1,"b":0.6,"a":0.4,
+      "vertices": [-3,18, 3,18, 0,22],
+      "triangles": [0,1,2]
+    }
+
+  ],
+
+  "texts": [
+    { "size": 42, "r":1,"g":1,"b":1,"a":1, "x": -8, "y": 20, "text": "Prism Lab" },
+    { "size": 28, "r":1,"g":0.5,"b":0,"a":1, "x": 11, "y": -20, "text": "Receiver" }
+  ]
+}
