@@ -29,6 +29,7 @@ Making a level:
     MeshObjects
 
   Level config:
+  
     Name: 
       First you have the name, right now the name gets taken from the file name but it's still important to assighn a name for later functionality.
       Type: string
