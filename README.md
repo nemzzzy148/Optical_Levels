@@ -1,13 +1,13 @@
-# 🛠️ LEVEL CREATION GUIDE
+# LEVEL CREATION GUIDE
 
-> ⚠️ The level content is stored in a JSON file.  
+> The level content is stored in a JSON file.  
 > Even small mistakes can stop the game from loading the level.
 >
 > All preset vars are examples!
 
 ---
 
-# 📌 IMPORTANT INFO
+# IMPORTANT INFO
 
 If you leave certain values empty, the game will load default values.
 
@@ -22,7 +22,7 @@ You can leave empty:
 
 ---
 
-# 📍 POSITIONS
+# POSITIONS
 
 ### Center
 ```
@@ -38,7 +38,7 @@ You can leave empty:
 
 ---
 
-# 🎨 COLORS
+# COLORS
 
 Each color has **4 parts**:
 
@@ -62,7 +62,7 @@ Example:
 
 ---
 
-# 🧩 4 CRUCIAL IN-GAME COMPONENTS
+# 4 CRUCIAL IN-GAME COMPONENTS
 
 ```
 1. Level config
@@ -73,7 +73,7 @@ Example:
 
 ---
 
-# ⚙️ LEVEL CONFIG
+# LEVEL CONFIG
 
 ### Name
 ```json
@@ -98,7 +98,7 @@ Scales receiver and light objects for larger levels.
 
 ---
 
-# 💡 LIGHTS
+# LIGHTS
 
 Type: **Array**
 
@@ -129,7 +129,7 @@ Type: **Array**
 
 ---
 
-# 🎯 RECEIVERS
+# RECEIVERS
 
 If all receivers are turned on, the player wins.
 
@@ -148,7 +148,7 @@ Defines if the receiver needs light to turn on.
 
 ---
 
-# 🧱 MESHOBJECTS
+# MESHOBJECTS
 
 Examples:
 - Walls  
@@ -201,7 +201,7 @@ Even if the normal faces away from the player, it will still render.
 
 ---
 
-# 📝 TEXT
+# TEXT
 
 ### Text
 ```json
@@ -231,7 +231,6 @@ Even if the normal faces away from the player, it will still render.
 
 ---
 
-# ✅ FINAL TIP
 
 If your level does not load:
 
@@ -240,6 +239,3 @@ If your level does not load:
 - Check array formatting  
 - Check spelling  
 
----
-
-🚀 Happy level building!
