@@ -231,6 +231,105 @@ Even if the normal faces away from the player, it will still render.
 
 ---
 
+### Upload level
+In the json table, add your level name that matches with your file name, and upload your level.
+
+---
+
+## Example
+```json
+{
+  "name": "Owners_Level",
+  "size": 1.0,
+  "bgR": 0.05,
+  "bgG": 0.05,
+  "bgB": 0.1,
+  "bgA": 1.0,
+
+  "lights": [
+    {
+      "x": -5.0,
+      "y": 0.0,
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    {
+      "x": -8.0,
+      "y": 5.0,
+      "r": 1.0,
+      "g": 0.8,
+      "b": 0.6,
+      "a": 1.0
+    }
+  ],
+
+  "receivers": [
+    {
+      "x": 5.0,
+      "y": 0.0,
+      "light": true
+    },
+    {
+      "x": 8.0,
+      "y": -4.0,
+      "light": true
+    }
+  ],
+
+  "meshObjects": [
+    {
+      "mirror": true,
+      "collision": true,
+      "drawable": false,
+      "r": 0.8,
+      "g": 0.8,
+      "b": 1.0,
+      "a": 1.0,
+      "vertices": [-0.5, -2.0, 0.5, -2.0, 0.5, 2.0, -0.5, 2.0],
+      "triangles": [0, 2, 1, 0, 3, 2]
+    },
+    {
+      "mirror": false,
+      "collision": true,
+      "drawable": false,
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5,
+      "a": 1.0,
+      "vertices": [-3.0, -1.0, 3.0, -1.0, 3.0, -0.5, -3.0, -0.5],
+      "triangles": [0, 2, 1, 0, 3, 2]
+    }
+  ],
+
+  "texts": [
+    {
+      "text": "Welcome to Online Levels",
+      "x": 0.0,
+      "y": 3.0,
+      "size": 5.0,
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    {
+      "text": "Activate all receivers to win!",
+      "x": 0.0,
+      "y": -6.0,
+      "size": 4.0,
+      "r": 0.7,
+      "g": 0.9,
+      "b": 1.0,
+      "a": 1.0
+    }
+  ]
+}
+```
+
+---
+
 
 If your level does not load:
 
