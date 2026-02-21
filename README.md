@@ -1,4 +1,5 @@
 Making a level:
+
   The level content is stored in a Json file where minor mistakes can stop the game from loadig the level.
   All preset vars are examples!
 
