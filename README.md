@@ -1,90 +1,108 @@
-Making a Level
+# 🛠️ LEVEL CREATION GUIDE
 
-The level content is stored in a JSON file where minor mistakes can stop the game from loading the level.
-All preset vars are examples!
+> ⚠️ The level content is stored in a JSON file.  
+> Even small mistakes can stop the game from loading the level.
+>
+> All preset vars are examples!
 
-Important Info
+---
 
-If you leave certain values empty, the game will load the default value.
+# 📌 IMPORTANT INFO
 
-You can do this for:
+If you leave certain values empty, the game will load default values.
 
-Colors
+You can leave empty:
 
-Names (For text component it will default to Lux)
+- 🎨 Colors  
+- 📝 Names (Text component defaults to **"Lux"**)  
+- 🔖 Types  
+- 📏 Size of level  
+- 🔺 Vertices & Triangles → Creates empty MeshObject  
+- 📍 Positions → Defaults to `(0,0)`
 
-Types
+---
 
-Size of level
+# 📍 POSITIONS
 
-Vertices and triangles (it will create an empty MeshObject)
-
-Positions (defaults to 0)
-
-Positions
-
-Center:
-
+### Center
+```
 (0, 0)
+```
 
-Position range on screen:
+### Position range on screen
 
-X: -15 to 15
+| Axis | Min | Max |
+|------|------|------|
+| X | -15 | 15 |
+| Y | -25 | 25 |
 
-Y: -25 to 25
+---
 
-Colors
+# 🎨 COLORS
 
-Each color component has 4 parts:
+Each color has **4 parts**:
 
+```
 r g b a
+```
 
-r = red
-
-g = green
-
-b = blue
-
-a = transparency
+- `r` = red  
+- `g` = green  
+- `b` = blue  
+- `a` = transparency  
 
 Example:
 
+```json
 "r": 1.0,
 "g": 1.0,
 "b": 1.0,
 "a": 1.0
-There are 4 crucial in-game components:
+```
 
-Level config
+---
 
-Lights
+# 🧩 4 CRUCIAL IN-GAME COMPONENTS
 
-Receivers
+```
+1. Level config
+2. Lights
+3. Receivers
+4. MeshObjects
+```
 
-MeshObjects
+---
 
-Level Config
+# ⚙️ LEVEL CONFIG
 
-Name
-
+### Name
+```json
 "name": "My new and awesome level!"
+```
 
-Size
-The size component scales the receiver object and light object for larger levels.
-(Not used right now)
+### Size
+Scales receiver and light objects for larger levels.  
+(Not used right now.)
 
+```json
 "size": 1.0
+```
 
-Background color
-
+### Background color
+```json
 "bgR": 0.05,
 "bgG": 0.05,
 "bgB": 0.1,
 "bgA": 1.0
-Lights
+```
 
-Type: Array
+---
 
+# 💡 LIGHTS
+
+Type: **Array**
+
+```json
 "Lights": [
   {
     // Light 1
@@ -93,85 +111,135 @@ Type: Array
     // Light 2
   }
 ]
+```
 
-Position
-
+### Position
+```json
 "x": -5.0,
 "y": 0.0
+```
 
-Color
-
+### Color
+```json
 "r": 1.0,
 "g": 1.0,
 "b": 1.0,
 "a": 1.0
-Receivers
+```
 
-If all the receivers are turned on, the player wins.
+---
 
-Position
+# 🎯 RECEIVERS
 
+If all receivers are turned on, the player wins.
+
+### Position
+```json
 "x": 5.0,
 "y": 0.0
+```
 
-The boolean light defines if the receiver needs to receive light to turn on.
+### Light requirement
+Defines if the receiver needs light to turn on.
 
+```json
 "light": true
-MeshObjects
+```
 
-Examples: walls, mirrors, places where you can't draw.
+---
 
-Mirror
+# 🧱 MESHOBJECTS
+
+Examples:
+- Walls  
+- Mirrors  
+- Places where you can't draw  
+
+---
+
+### Mirror
 Defines if it reflects light.
 
+```json
 "mirror": true
+```
 
-Collision
+### Collision
 Defines if light can go through it.
 
+```json
 "collision": true
+```
 
-Draw
+### Draw
 Defines if the player can draw on it.
 
+```json
 "drawable": false
+```
 
-Color
-
+### Color
+```json
 "r": 1.0,
 "g": 1.0,
 "b": 1.0,
 "a": 1.0
+```
 
-Vertices
-This uses Unity's mesh system.
-Even if the normal is facing away from the player it will still render.
+### Vertices
+Uses Unity's mesh system.  
+Even if the normal faces away from the player, it will still render.
 
+```json
 "vertices": [-0.5, -2.0, 0.5, -2.0, 0.5, 2.0, -0.5, 2.0]
+```
 
-Triangles
-
+### Triangles
+```json
 "triangles": [0, 2, 1, 0, 3, 2]
-Text
+```
 
-Text
+---
 
+# 📝 TEXT
+
+### Text
+```json
 "text": "Welcome to my level!"
+```
 
-Position
-
+### Position
+```json
 "x": 5.0,
 "y": 0.0
+```
 
-Size
-
+### Size
+```json
 "size": 5.0
+```
 
 (Just font size.)
 
-Color
-
+### Color
+```json
 "r": 1.0,
 "g": 1.0,
 "b": 1.0,
 "a": 1.0
+```
+
+---
+
+# ✅ FINAL TIP
+
+If your level does not load:
+
+- Check commas  
+- Check brackets `{}` and `[]`  
+- Check array formatting  
+- Check spelling  
+
+---
+
+🚀 Happy level building!
