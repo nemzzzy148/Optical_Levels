@@ -88,6 +88,21 @@ Making a level:
       "vertices": [-0.5, -2.0, 0.5, -2.0, 0.5, 2.0, -0.5, 2.0]
     Triangles:
       "triangles": [0, 2, 1, 0, 3, 2]
+  Text:
+    Text:
+     "text": "Welcome to my level!"
+    Pos:
+      "x": 5.0,
+      "y": 0.0
+    Size:
+      "size": 5.0 (just font size)
+    Color:
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+      
+      
     
       
       
