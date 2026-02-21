@@ -1,3 +1,9 @@
+# GOAL
+> Use your finger to draw lines to reflect light onto receivers.
+> If all the receivers turn green you beat the level.
+
+---
+
 # LEVEL CREATION GUIDE
 
 > The level content is stored in a JSON file.  
