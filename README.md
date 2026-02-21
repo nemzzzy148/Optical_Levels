@@ -29,16 +29,12 @@ Making a level:
 
   Level config:
     Name: 
-      Type: string
-        "name": "My new and awesome level!"
+      "name": "My new and awesome level!"
     Size:
       The size component scales the receiver object and light object for larger level's.
       (Not used right now)
-      Type: float
-      Declaration:
         "size": 1.0
     Background color:
-      Type: float 0-1
         "bgR": 0.05,
         "bgG": 0.05,
         "bgB": 0.1,
@@ -62,7 +58,36 @@ Making a level:
       "g": 1.0,
       "b": 1.0,
       "a": 1.0
-  Receivers
+  Receivers:
+    If all the receivers are turned on, the player wins.
+    Pos:
+      "x": 5.0,
+      "y": 0.0
+    The bool light defines if the receiver needs to receive light to turn on.
+    Light:
+      "light": true
+  MeshObjects:
+    Ex: walls, mirrors, places where you can't draw.
+    Mirror:
+      Defines if it reflects light
+      "mirror": true
+    Collision:
+      Can light go through it.
+      "collision": true
+    Draw:
+      Can the player draw on it:
+      "drawable": false
+    Color:
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    Vertices:
+      This uses Unity's mesh system.
+      Even if normal is facing away from player it will still render it.
+      "vertices": [-0.5, -2.0, 0.5, -2.0, 0.5, 2.0, -0.5, 2.0]
+    Triangles:
+      "triangles": [0, 2, 1, 0, 3, 2]
     
       
       
