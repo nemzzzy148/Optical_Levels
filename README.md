@@ -4,6 +4,7 @@ Making a level:
   All preset vars are examples!
 
   Important info:
+  
     If you leave certain values empty, the game will load the default value.
     You can do this for 
     colors, 
@@ -14,12 +15,14 @@ Making a level:
     For positions it will just be 0
     
   Positions:
+  
     Center = (0,0)
     Pos in screen:
       X: -15 , 15
       Y: -25 , 25
 
   There are 4 crutial ingame componants:
+  
     Level config
     Lights
     Receivers
