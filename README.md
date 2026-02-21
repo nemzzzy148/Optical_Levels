@@ -3,6 +3,7 @@
 > 
 > If all the receivers turn green you beat the level.
 
+![](.level.png)
 ---
 
 # LEVEL CREATION GUIDE
