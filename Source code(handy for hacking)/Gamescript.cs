@@ -129,6 +129,7 @@ public class Gamescript : MonoBehaviour
             {
                 
             }
+
         }
     }
     public void LocalGame(int levelindex)
@@ -136,7 +137,7 @@ public class Gamescript : MonoBehaviour
         LevelData data = LoadLocalLevelData(levelindex);
         LoadLevel(data);
     }
-    // LOE !!!! HIER
+    // LOU !!!! HIER
     public IEnumerator LoadOnlineLevelData(string url)
     {
         // sends request to server 
@@ -263,7 +264,7 @@ public class Gamescript : MonoBehaviour
         Texts.Clear();
     }
 }
-// LOE !!! HIER
+// LOU !!! HIER
 // Directories for game to communicate with the server
 public static class Server
 {
