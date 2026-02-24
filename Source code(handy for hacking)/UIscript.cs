@@ -135,7 +135,7 @@ public class UIscript : MonoBehaviour
         }
     }
     // get all avaible online levels from table
-    // LOE !!! HIER
+    // LOU !!! HIER
     IEnumerator GetLevelList()
     {
         UnityWebRequest unityWebRequest = UnityWebRequest.Get(Server.table);
@@ -210,3 +210,4 @@ public static class RuntimeData
     public static int id = 1;
     public static string url = "";
 }
+
